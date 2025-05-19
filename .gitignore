@@ -1,0 +1,47 @@
+# Build results
+bin/
+obj/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.vspscc
+*.vssscc
+
+# Visual Studio working folder
+.vs/
+
+# Rider IDE
+.idea/
+
+# Auto-generated files
+Generated\ Files/
+
+# Mac build
+build/
+*.apk
+*.ap_
+*.aab
+
+# VS Code
+.vscode/
+
+# Xamarin
+*.apk
+*.dex
+*.keystore
+
+# MAUI
+**/Platforms/Android/obj/
+**/Platforms/Android/bin/
+**/Platforms/iOS/obj/
+**/Platforms/iOS/bin/
+
+# Others
+*.db
+*.log
+*.vsidx
+*.lock.json
+
