@@ -61,7 +61,16 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiImage Remove="Resources\Images\Agendamento Aberto Cabeleireira Moderno Bege Post para Instagram %281%29.png" />
+	</ItemGroup>
+
+	<ItemGroup>
 	  <MauiXaml Remove="Views\NewPage1.xaml" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Remove="Resources\Images\Agendamento Aberto Cabeleireira Moderno Bege Post para Instagram %281%29.png" />
+	  <None Remove="Resources\Images\img2.png" />
 	</ItemGroup>
 
 	<ItemGroup>

@@ -6,4 +6,8 @@ public partial class Sobre : ContentPage
 	{
 		InitializeComponent();
 	}
+    private async void Button_Clicar(object sender, EventArgs e)
+	{
+		Navigation.PushAsync(new ContratacaoHospedagem());
+	}
 }

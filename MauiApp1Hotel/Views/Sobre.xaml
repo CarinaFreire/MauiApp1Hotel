@@ -2,15 +2,19 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiApp1Hotel.Views.Sobre"
-             Title="Sobre"
-             BackgroundColor="Black">
+             BackgroundColor="AntiqueWhite">
 
     <VerticalStackLayout VerticalOptions="CenterAndExpand"
                          Padding="10">
 
+        <Label Text="Sobre"           
+           TextColor="Black"
+           FontSize="20"
+           HorizontalTextAlignment="Center"/>
+
         <VerticalStackLayout Padding="10" Spacing="15">
 
-            <Image Source="img.png" 
+            <Image Source="img1.png" 
                    WidthRequest="150" 
                    HeightRequest="150"
                    HorizontalOptions="Center" />
@@ -18,8 +22,8 @@
             <Label FontFamily="LexendZetta" FontSize="20" Margin="0,0,0,0">
                 <Label.FormattedText>
                     <FormattedString>
-                        <Span Text="App Desenvolvido por: " FontAttributes="Bold" TextColor="Blue" />
-                        <Span Text="Carina da Silva Freire." TextColor="White" />
+                        <Span Text="App Desenvolvido por: " FontAttributes="Bold" TextColor="Black"/>
+                        <Span Text="Carina da Silva Freire." TextColor="Black"/>
                     </FormattedString>
                 </Label.FormattedText>
             </Label>
@@ -27,11 +31,16 @@
             <Label FontFamily="LexendZetta" FontSize="20" Margin="0,5,0,0">
                 <Label.FormattedText>
                     <FormattedString>
-                        <Span Text="Ano de desenvolvimento: " FontAttributes="Bold" TextColor="Blue" />
-                        <Span Text="2025" TextColor="White" />
+                        <Span Text="Ano de desenvolvimento: " FontAttributes="Bold" TextColor="Black"/>
+                        <Span Text="2025" TextColor="Black" />
                     </FormattedString>
                 </Label.FormattedText>
             </Label>
+
+            <Button Text="Voltar" Clicked="Button_Clicar"
+                    HorizontalOptions="Center"
+                    BackgroundColor="Black"
+                    TextColor="White"/>
 
         </VerticalStackLayout>
 

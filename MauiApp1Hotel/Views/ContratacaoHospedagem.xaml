@@ -8,10 +8,17 @@
 
 <VerticalStackLayout VerticalOptions="CenterAndExpand"
                          Padding="10">
-    <Label 
+    
+        <Image Source="img2.png" 
+       WidthRequest="100" 
+       HeightRequest="100"
+       HorizontalOptions="Center" />
+
+        <Label 
             Text="Cálculo da Diária"
+            HorizontalOptions="CenterAndExpand"
             FontFamily="LexendZetta"
-            FontSize="30"/>
+            FontSize="25"/>
 
         <Frame Padding="10">
             <VerticalStackLayout>
@@ -48,7 +55,8 @@
                 </Grid>
                 <Label Text="Escolha sua suíte" />
                 <Picker x:Name="pck_quarto"
-                        Title="Selecione sua Acomodação"/>
+
+                        ItemDisplayBinding="{Binding Descricao}"/>
 
                 <Frame Padding="10"
                        Margin="10">
@@ -58,12 +66,13 @@
                         <HorizontalStackLayout>
                             <Label Text="Chek-in: "/>
                             <DatePicker x:Name="dtpck_chekin"
+                                        DateSelected="dtpck_chehin_DateSelected"  
                                         Format="dd/MM/yyyy"/>
 
                         </HorizontalStackLayout>
                         <HorizontalStackLayout>
                             <Label Text="Chek-out: "/>
-                            <DatePicker x:Name="dtpck_out"
+                            <DatePicker x:Name="dtpck_checkout"
                                         Format="dd/MM/yyyy"/>
 
                         </HorizontalStackLayout>
@@ -72,15 +81,16 @@
 
                 </Frame>
 
-                <Button Text="Avançar"
-                        BackgroundColor="Black"
-                        TextColor="White"/>
+                <HorizontalStackLayout Spacing="10" HorizontalOptions="CenterAndExpand">
+                    <Button Text="Avançar" Clicked="Button_Clicked"
+                            BackgroundColor="Black"
+                            TextColor="White"/>
 
-                <Button Text="Sobre"
-                        BackgroundColor="Black"
-                        TextColor="White"
-                        Clicked="OnSobreClicked"/>
-
+                    <Button Text="Sobre"
+                            BackgroundColor="Black"
+                            TextColor="White"
+                            Clicked="OnSobreClicked"/>
+                </HorizontalStackLayout>
             </VerticalStackLayout>
         </Frame>
     </VerticalStackLayout>
